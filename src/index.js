@@ -44,8 +44,24 @@
 //  var4.address = "Tokyo"
 //  console.log(var4);
 
-//constの場合も、配列の場合は中身の変更が可能
-const var5 = ["dog", "cat"];
-var5[0] = "bird";
-var5.push("monkey");
-console.log(var5);
+// //constの場合も、配列の場合は中身の変更が可能
+// const var5 = ["dog", "cat"];
+// var5[0] = "bird";
+// var5.push("monkey");
+// console.log(var5);
+
+/**
+ * テンプレート文字列について
+ */
+const name = "宮田";
+const age = 27;
+
+//「私の名前は宮田です。年齢は27歳です。」
+
+//従来の方法
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+//テンプレート文字列
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
