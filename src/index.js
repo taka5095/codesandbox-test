@@ -50,18 +50,39 @@
 // var5.push("monkey");
 // console.log(var5);
 
-/**
- * テンプレート文字列について
- */
-const name = "宮田";
-const age = 27;
+// /**
+//  * テンプレート文字列について
+//  */
+// const name = "宮田";
+// const age = 27;
 
-//「私の名前は宮田です。年齢は27歳です。」
+// //「私の名前は宮田です。年齢は27歳です。」
 
-//従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// //従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
-//テンプレート文字列
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// //テンプレート文字列
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+//アロー関数
+//従来の関数
+// function func1(str){
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+//アロー関数
+//かっこは省略できる
+const func2 = (str) => str;
+console.log(func2("func2です"));
+
+//func3はあくまで関数（アロー関数）
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func3(1, 2));
