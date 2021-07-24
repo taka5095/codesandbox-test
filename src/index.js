@@ -71,18 +71,41 @@
 // function func1(str){
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です"));
 
-//アロー関数
-//かっこは省略できる
-const func2 = (str) => str;
-console.log(func2("func2です"));
+// //アロー関数
+// //かっこは省略できる
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
 
-//func3はあくまで関数（アロー関数）
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-console.log(func3(1, 2));
+// //func3はあくまで関数（アロー関数）
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func3(1, 2));
+
+// //分割代入
+// //いちいちmyProfileを書かなくてよくなる
+// const myProfile = {
+//   name:"宮田",
+//   age:27,
+// }
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`
+// console.log(message1);
+
+// const {name,age} = myProfile;
+
+// const message2 = `名前は${name}です。年齢は${age}歳です。`
+// console.log(message2);
+
+const myProfile = ["宮田", "27"];
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+
+const message4 = `名前は${name}です。年齢は${age}歳です。`;
+console.log(message4);
